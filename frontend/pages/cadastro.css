@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #0f0718;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: #1c1526;
+    width: 380px;
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid #36284a;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+h2 {
+    color: #d8b4fe;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.field {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+input {
+    width: 100%;
+    background: #0f0718;
+    border: 1px solid #36284a;
+    padding: 12px;
+    color: #fff;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #a855f7;
+    box-shadow: 0 0 8px rgba(168, 85, 247, 0.3);
+}
+
+label {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    color: #6b7280;
+    pointer-events: none;
+    transition: 0.3s;
+    background-color: #0f0718;
+    padding: 0 4px;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    top: -10px;
+    font-size: 0.8rem;
+    color: #a855f7;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #7c3aed, #9333ea);
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    transition: opacity 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.link-voltar {
+    display: block;
+    text-align: center;
+    color: #6b7280;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.link-voltar:hover {
+    color: #d8b4fe;
+}

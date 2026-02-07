@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #0f0718;
+    color: #f3f4f6;
+    padding: 2rem;
+}
+
+.main-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #2e2440;
+    padding-bottom: 1rem;
+}
+
+h2 {
+    color: #d8b4fe;;
+}
+
+header a {
+    color: #a855f7;
+    text-decoration: none;
+    border: 1px solid #a855f7;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+header a:hover {
+    background-color: #a855f7;
+    color: white;
+}
+
+#lista {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+li {
+    background-color: #1c1526;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #2e2440;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+li:hover {
+    border-color: #a855f7;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.15);
+    transform: translateY(-4px);
+}
+
+.nome-prod {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.preco-prod {
+    color: #c084fc;
+    font-size: 1.2rem;
+    text-align: right;
+}
